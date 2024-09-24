@@ -2,6 +2,8 @@
 [Github 기본 가이드](https://makeus-challenge.notion.site/Github-aaa7f52c9fa64656b4e4ea02de51a0a9)
 
 
+
+
 ## Setting
 
 ### Git 작업 순서
@@ -22,13 +24,16 @@
    ```
 
 
+
+
 ## Commit Convention
 - feat: 새로운 기능 추가
 - fix: 버그 수정
 - style: CSS 파일 등 UI 작업
 - refactor: 코드 리팩토링
 - chore: 빌드, 패키지 매니저 수정
-> 예시 : feat: 회원가입 로직 구현 💚 UMC 7th Erica Web-A Github 기본 가이드 💚
+> 예시 : feat: 회원가입 로직 구현 
+
 
 
 
@@ -54,6 +59,8 @@ PR 요청 시, 다음 양식을 준수해주세요
 
 > 예: 메서드 XXX의 이름을 더 잘 지을 수 있는 방법이 있을까요?
 ---
+
+
 
 
 ### 리뷰어 설정
