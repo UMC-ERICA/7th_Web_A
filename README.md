@@ -1,4 +1,4 @@
-# 💚 UMC 7th Erica Web-A 💚
+# 💚 UMC 7th ERICA Web-A 💚
 [Github 기본 가이드](https://makeus-challenge.notion.site/Github-aaa7f52c9fa64656b4e4ea02de51a0a9)
 
 
@@ -20,7 +20,7 @@
    ```bash
    git add .
    git commit -m "[커밋 메세지]"
-   git push origin [본인 브랜치명]
+   git push
    ```
 
 
@@ -64,7 +64,7 @@ PR 요청 시, 다음 양식을 준수해주세요
 
 
 ### 리뷰어 설정
-- PR 요청 시, Reviewers는 반드시 파트장으로 설정해주세요.
-- 파트장의 PR Approve 후 main 브랜치로 머지 가능합니다.
+- PR 요청 시, Reviewers는 파트장으로 설정해주세요.
+- 파트장의 코드 리뷰 및 Approve 후에 main 브랜치로 머지 가능합니다.
 
 
