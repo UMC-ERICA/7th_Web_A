@@ -1,4 +1,5 @@
 const taskInput = document.getElementById("task");
+const inputForm = document.getElementById("input-form");
 const toDoList = document.getElementById("toDoList");
 const doneList = document.getElementById("doneList");
 
@@ -29,10 +30,9 @@ function addTask() {
   taskInput.value = "";
 }
 
-taskInput.addEventListener("keypress", function (event) {
-  if (event.key === "Enter") {
-    addTask();
-  }
+inputForm.addEventListener("submit", (event) => {
+  event.preventDefault();
+  addTask();
 });
 
 // 해낸 일로 이동시키는 함수
