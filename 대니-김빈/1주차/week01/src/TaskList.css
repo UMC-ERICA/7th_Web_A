@@ -1,0 +1,27 @@
+
+.task-box-container {
+    display: flex;
+    flex-direction: column; /* 세로로 배치 */
+    align-items: center; /* 가로 방향으로 중앙 정렬 */
+    text-align: center;
+  }
+
+.task-item {
+    font-size: 18px;
+    color: #333;
+    display: flex;
+    justify-content: space-between; /* 할 일과 버튼 간의 간격 */
+  }
+  
+  .register-button {
+    background-color: #bbe2fd;
+    color: black;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  .register-button:hover {
+    background-color: #96d3ff;
+  }
+  
