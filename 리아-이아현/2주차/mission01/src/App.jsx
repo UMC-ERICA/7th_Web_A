@@ -47,6 +47,7 @@ function App() {
           onChange={(e) => {
             setText(e.target.value);
           }}
+          className="submitInput"
         />
         <Button onClick={addTodo} buttonText="할 일 등록" type="submit" className="submitButton" />
       </form>
@@ -67,6 +68,7 @@ function App() {
                 <Input
                   defaultValue={todo.task}
                   onChange={(e) => setEditText(e.target.value)}
+                  className="editInput"
                 />
               </div>
             )}
