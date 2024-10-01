@@ -41,7 +41,7 @@ function App() {
 
   return (
     <>
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit} className="form-container">
         <Input
           value={text}
           onChange={(e) => {
@@ -51,19 +51,19 @@ function App() {
         />
         <Button onClick={addTodo} buttonText="할 일 등록" type="submit" className="submitButton" />
       </form>
-      <div>
+      <div className="todos-container">
         {todos.map((todo, _) => (
-          <div key={todo.id} style={{ display: "flex", gap: "20px" }}>
+          <div key={todo.id} className="todo-item">
             {/*수정이 아닐 때 */}
             {editingId !== todo.id && (
-              <div key={todo.id} style={{ display: "flex", gap: "5px" }}>
+              <div key={todo.id} className="todo-item">
                 <p>{todo.id}.</p>
                 <p>{todo.task}</p>
               </div>
             )}
             {/*수정 중일 때 */}
             {editingId === todo.id && (
-              <div key={todo.id} style={{ display: "flex", gap: "5px" }}>
+              <div key={todo.id} className="todo-item">
                 <p>{todo.id}.</p>
                 <Input
                   defaultValue={todo.task}
