@@ -1,6 +1,6 @@
-/* eslint-disable no-unused-vars */
 import { useState } from "react";
 import "./App.css";
+import Button from "./components/Button";
 
 function App() {
   const [todos, setTodos] = useState([{ id: 1, task: "투두 만들어보기" }]);
@@ -48,13 +48,10 @@ function App() {
             setText(e.target.value);
           }}
         />
-        <button onClick={() => addTodo()} type="submit">
-          할 일 등록
-        </button>
+        <Button onClick={addTodo} buttonText="할 일 등록" type="submit" />
       </form>
       <div>
         {todos.map((todo, _) => (
-          // eslint-disable-next-line react/jsx-key
           <div key={todo.id} style={{ display: "flex", gap: "20px" }}>
             {/*수정이 아닐 때 */}
             {editingId !== todo.id && (
@@ -74,14 +71,18 @@ function App() {
               </div>
             )}
 
-            <button onClick={() => deleteTodo(todo.id)}>삭제하기</button>
+            <Button onClick={() => deleteTodo(todo.id)} buttonText="삭제하기" />
             {/* editingId !== todo.id 수정이 아닌 상태 */}
             {editingId === todo.id ? (
-              <button onClick={() => updateTodo(editingId, editText)}>
-                수정 완료
-              </button>
+              <Button
+                onClick={() => updateTodo(editingId, editText)}
+                buttonText="수정 완료"
+              />
             ) : (
-              <button onClick={() => setEditingId(todo.id)}>수정 진행</button>
+              <Button
+                onClick={() => setEditingId(todo.id)}
+                buttonText="수정 진행"
+              />
             )}
           </div>
         ))}
