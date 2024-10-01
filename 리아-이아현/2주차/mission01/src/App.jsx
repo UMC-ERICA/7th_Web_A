@@ -49,7 +49,12 @@ function App() {
           }}
           className="submitInput"
         />
-        <Button onClick={addTodo} buttonText="할 일 등록" type="submit" className="submitButton" />
+        <Button
+          onClick={addTodo}
+          buttonText="할 일 등록"
+          type="submit"
+          className="submitButton"
+        />
       </form>
       <div className="todos-container">
         {todos.map((todo, _) => (
@@ -73,7 +78,11 @@ function App() {
               </div>
             )}
 
-            <Button onClick={() => deleteTodo(todo.id)} buttonText="삭제하기" className="deleteButton" />
+            <Button
+              onClick={() => deleteTodo(todo.id)}
+              buttonText="삭제하기"
+              className="deleteButton"
+            />
             {/* editingId !== todo.id 수정이 아닌 상태 */}
             {editingId === todo.id ? (
               <Button
