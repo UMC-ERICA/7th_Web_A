@@ -48,7 +48,7 @@ function App() {
             setText(e.target.value);
           }}
         />
-        <Button onClick={addTodo} buttonText="할 일 등록" type="submit" />
+        <Button onClick={addTodo} buttonText="할 일 등록" type="submit" className="submitButton" />
       </form>
       <div>
         {todos.map((todo, _) => (
@@ -71,17 +71,19 @@ function App() {
               </div>
             )}
 
-            <Button onClick={() => deleteTodo(todo.id)} buttonText="삭제하기" />
+            <Button onClick={() => deleteTodo(todo.id)} buttonText="삭제하기" className="deleteButton" />
             {/* editingId !== todo.id 수정이 아닌 상태 */}
             {editingId === todo.id ? (
               <Button
                 onClick={() => updateTodo(editingId, editText)}
                 buttonText="수정 완료"
+                className="completeButton"
               />
             ) : (
               <Button
                 onClick={() => setEditingId(todo.id)}
                 buttonText="수정 진행"
+                className="updateButton"
               />
             )}
           </div>

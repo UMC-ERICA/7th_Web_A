@@ -1,0 +1,43 @@
+.submitButton {
+  background-color: rgb(235, 220, 82);
+  color: black;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.submitButton:hover {
+  background-color: rgb(215, 202, 86);
+}
+
+.deleteButton {
+  background-color: rgb(235, 84, 84);
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.deleteButton:hover {
+  background-color: rgb(198, 65, 65);
+}
+
+.completeButton {
+  background-color: rgb(47, 155, 222);
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.completeButton:hover {
+  background-color: rgb(28, 130, 194);
+}
+
+.updateButton {
+  background-color: rgb(120, 195, 128);
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.updateButton:hover {
+  background-color: rgb(89, 168, 97);
+}
