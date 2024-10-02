@@ -1,6 +1,5 @@
 import { useState } from "react";
-
-const IMG_BASE_URL = "https://image.tmdb.org/t/p/w500/";
+import IMG_BASE_URL from "../constants/path";
 
 export default function Movie({ poster_path }) {
   const [hovered, setHovered] = useState(false);
