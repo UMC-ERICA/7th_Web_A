@@ -15,13 +15,13 @@ function App() {
 
   //랜더링 방지
   const handleSubmit = (e) => {
-    e.perventDefault();
+    e.preventDefault();
   };
   // 1. 추가하기
   const addTodo = () => {
     setTodos((prev) => [
       ...prev,
-      { id: Math.floor(Math.ramdom() * 100) + 2, task: text},
+      { id: Math.floor(Math.random() * 100) + 2, task: text}
     ]);
     setText('');
   };
