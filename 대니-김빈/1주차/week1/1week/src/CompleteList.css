@@ -1,0 +1,28 @@
+
+.task-complete-box-container {
+    display: flex;
+    flex-direction: column; /* 세로로 배치 */
+    align-items: center; /* 가로 방향으로 중앙 정렬 */
+    text-align: center;
+  }
+
+.task-complete-item {
+    font-size: 18px;
+    color: #333;
+    display: flex;
+    justify-content: space-between; /* 할 일과 버튼 간의 간격 */
+  }
+  
+  .delete-button {
+    margin-left: 10px;
+    background-color: #a1d1f4;
+    color: black;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  .register-button:hover {
+    background-color: #96d3ff;
+  }
+  

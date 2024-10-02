@@ -1,8 +1,14 @@
 .App {
+  background-color: #d1e4f2; /* 원하는 배경 색상으로 변경 */
   display: flex; /* 플렉스 박스로 전환 */
   flex-direction: column; /* 세로 방향으로 아이템을 배치 */
   align-items: center; /* 가로 방향 중앙 정렬 */
   text-align: center; /* 텍스트도 가운데 정렬 */
+  height: 100vh; /* 화면 전체 높이 */
+}
+h1{
+  font-size: 60px;
+
 }
 
 ul {
@@ -10,6 +16,19 @@ ul {
   padding-left: 0; /* 기본 패딩 제거 */
   width: fit-content; /* 콘텐츠에 맞는 너비 */
   margin: 0 auto; /* 수평 중앙 정렬 */
+}
+
+.lists {
+  display: flex;
+  justify-content: space-between; /* 리스트들을 좌우로 배치 */
+  width: 40%; /* 리스트들이 차지하는 전체 너비 */
+  margin-top: 20px; /* 상단 여백 */
+}
+
+.task-item, .completed-task-item {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 10px;
 }
 
 li {
@@ -40,7 +59,7 @@ li {
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: #61dafb;
 }
 
 .App-link {
@@ -59,6 +78,4 @@ li {
   to {
     transform: rotate(360deg);
   }
-
-  
 }
