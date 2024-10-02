@@ -1,0 +1,67 @@
+.submitButton {
+  background-color: rgb(153, 93, 193);
+  color: white;
+  padding: 15px 30px;
+  cursor: pointer;
+  width: 15%;
+  border: none;
+  border-radius: 20px;
+  font-size: 1.2rem;
+  font-family: "Arial", sans-serif;
+  margin: 30px;
+}
+
+.submitButton:hover {
+  background-color: rgb(99, 34, 159);
+}
+
+.deleteButton {
+  background-color: rgb(235, 84, 84);
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+  width: 8%;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-family: "Arial", sans-serif;
+  margin: 20px 0;
+}
+
+.deleteButton:hover {
+  background-color: rgb(198, 65, 65);
+}
+
+.completeButton {
+  background-color: rgb(47, 155, 222);
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+  width: 8%;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-family: "Arial", sans-serif;
+  margin: 20px 0;
+}
+
+.completeButton:hover {
+  background-color: rgb(28, 130, 194);
+}
+
+.updateButton {
+  background-color: rgb(120, 195, 128);
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+  width: 8%;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-family: "Arial", sans-serif;
+  margin: 20px 0;
+}
+
+.updateButton:hover {
+  background-color: rgb(89, 168, 97);
+}
