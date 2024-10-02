@@ -46,8 +46,8 @@ function App() {
         <div  style ={{ display: 'flex', gap: '20px'}}>
           {editingId !== todo.id && (
             <div key = {todo.id}  style ={{ display: 'flex', gap: '5px'}}>
-              <p>{todo.id}.</p>
-              <p>{todo.task}.</p>
+              <p>{todo.id}</p>
+              <p>{todo.task}</p>
             </div>
         )}
           {editingId === todo.id && (
