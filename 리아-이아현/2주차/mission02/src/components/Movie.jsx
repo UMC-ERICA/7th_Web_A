@@ -19,7 +19,7 @@ export default function Movie({ poster_path }) {
       onMouseLeave={() => setHovered(false)}
     >
       <img
-        src={IMG_BASE_URL + poster_path}
+        src={`${IMG_BASE_URL}${poster_path}`}
         alt="포스터 사진"
         style={{ width: "100%", height: "auto" }}
       />
