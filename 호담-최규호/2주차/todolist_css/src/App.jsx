@@ -53,10 +53,10 @@ function App() {
       </form>
       <div>
         {todos.map((todo, _) => (
-          <div key={todo.id} style={{ display: 'flex', gap: '20px'}}>
+          <div key={todo.id} className="todo-container">
             {/* 수정이 아닐 때 */}
             {editingId !== todo.id && (
-              <div key={todo.id} style={{ display: 'flex', gap: '5px' }}>
+              <div key={todo.id} className="todo-item">
                 <p>{todo.id}.</p>
                 <p>{todo.task}</p>
               </div>
