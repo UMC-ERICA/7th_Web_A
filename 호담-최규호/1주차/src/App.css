@@ -49,3 +49,8 @@ body {
 .achievement {
   margin: 0;
 }
+
+.with-border {
+  border-bottom: 5px solid black;
+  padding-bottom: 5px; /* 텍스트와 밑줄 사이의 간격 */
+}
