@@ -1,0 +1,56 @@
+body {
+  margin: 0; /* 기본 margin 제거 */
+  height: 100vh; /* 뷰포트 높이를 100%로 설정 */
+  display: flex; /* Flexbox 사용 */
+  align-items: flex-start; /* 수직 정렬: 상단 */
+  justify-content: center; /* 수평 정렬: 중앙 */
+  background-color: #e9f4f9;
+}
+
+.divider {
+  width: 100%; /* 너비를 100%로 설정 */
+  height: 2px; /* 줄의 두께 */
+  background-color: #969696; /* 줄의 색상 (검정색) */
+  border: none; /* 기본 테두리 제거 */
+  margin-top: 60px; /* 텍스트와 줄 사이의 여백 설정 */
+}
+
+.input-field {
+  width: 100%; /* 너비를 100%로 설정 */
+  padding: 10px; /* 패딩 추가 */
+  margin-top: 20px; /* 위쪽 여백 추가 */
+  border: 1px solid #ccc; /* 경계선 스타일 */
+  border-radius: 4px; /* 경계선 모서리를 둥글게 */
+  font-size: 16px; /* 글자 크기 */
+}
+
+.task-container {
+  display: flex; /* Flexbox 사용 */
+  justify-content: space-between; /* 자식 요소들 사이의 공간을 균등하게 배치 */
+  align-items: center; /* 세로 정렬을 중앙으로 */
+  width: 100%; /* 전체 너비 사용 */
+  margin-top: 20px; /* 위쪽 여백 설정 (필요에 따라 조절) */
+}
+
+.container {
+  width: 100%; /* 컨테이너 너비를 100%로 설정 */
+}
+
+.centered-text {
+  font-size: 100px;
+  margin-top: 100px; /* 텍스트의 상단 여백 설정 (필요에 따라 조절) */
+  text-align: center; /* 텍스트 중앙 정렬 */
+}
+
+.task {
+  margin: 0;
+}
+
+.achievement {
+  margin: 0;
+}
+
+.with-border {
+  border-bottom: 5px solid black;
+  padding-bottom: 5px; /* 텍스트와 밑줄 사이의 간격 */
+}

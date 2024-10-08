@@ -1,0 +1,9 @@
+.todo-container {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .todo-item {
+    display: flex;
+    gap: 5px;
+  }
