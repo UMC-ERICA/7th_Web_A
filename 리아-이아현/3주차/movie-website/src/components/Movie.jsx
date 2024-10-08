@@ -3,6 +3,7 @@ import styled from "styled-components";
 import IMG_BASE_URL from "../constants/path";
 
 const MovieContainer = styled.div`
+    background-color: black;
     width: 200px;
     border-radius: 10px;
     overflow: hidden
@@ -15,9 +16,22 @@ const PosterImage = styled.img`
   width: 100%;
   height: 300px;
   object-fit: cover;
+  border-radius: 10px;
 `;
 
-export default function Movie({ poster_path }) {
+const MovieTitle = styled.h3`
+  font-size: 15px;
+  margin: 10px 0;
+  color: white;
+`;
+
+const ReleaseDate = styled.p`
+  font-size: 10px;
+  color: #ccc;
+  margin-bottom: 10px;
+`;
+
+export default function Movie({ poster_path, title, release_date }) {
   const [hovered, setHovered] = useState(false);
 
   return (
@@ -27,6 +41,8 @@ export default function Movie({ poster_path }) {
       onMouseLeave={() => setHovered(false)}
     >
       <PosterImage src={`${IMG_BASE_URL}${poster_path}`} alt="포스터 사진" />
+      <MovieTitle>{title}</MovieTitle>
+      <ReleaseDate>{release_date}</ReleaseDate>
     </MovieContainer>
   );
 }
