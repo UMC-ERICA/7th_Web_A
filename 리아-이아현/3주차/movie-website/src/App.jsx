@@ -1,21 +1,22 @@
 import Movie from "./components/Movie";
+import styled from "styled-components";
 import { MOVIES } from "./mocks/movies";
 
-function App() {
-  const appContainerStyle = {
-    display: "flex",
-    flexWrap: "wrap",
-    justifyContent: "center",
-    gap: 20,
-    padding: 20,
-  };
+const AppContainer = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+`;
 
+function App() {
   return (
-    <div style={appContainerStyle}>
+    <AppContainer>
       {MOVIES.results.map((item) => (
         <Movie key={item.id} poster_path={item.poster_path} />
       ))}
-    </div>
+    </AppContainer>
   );
 }
 

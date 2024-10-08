@@ -1,28 +1,31 @@
 import { useState } from "react";
+import styled from "styled-components";
 import IMG_BASE_URL from "../constants/path";
+
+const MovieContainer = styled.div`
+    width: 180px;
+    border-radius: 10px;
+    overflow: hidden
+    text-align: center;
+    filter: ${(props) =>
+      props.hovered ? "brightness(50%)" : "brightness(100%)"};
+`;
+
+const PosterImage = styled.img`
+  width: 100%;
+  height: auto;
+`;
 
 export default function Movie({ poster_path }) {
   const [hovered, setHovered] = useState(false);
 
-  const movieStyle = {
-    width: 180,
-    borderRadius: 10,
-    overflow: "hidden",
-    textAlign: "center",
-    filter: hovered ? "brightness(50%)" : "brightness(100%)",
-  };
-
   return (
-    <div
-      style={movieStyle}
+    <MovieContainer
+      hovered={hovered.toString()}
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
     >
-      <img
-        src={`${IMG_BASE_URL}${poster_path}`}
-        alt="포스터 사진"
-        style={{ width: "100%", height: "auto" }}
-      />
-    </div>
+      <PosterImage src={`${IMG_BASE_URL}${poster_path}`} alt="포스터 사진" />
+    </MovieContainer>
   );
 }
