@@ -3,16 +3,18 @@ import styled from "styled-components";
 import IMG_BASE_URL from "../constants/path";
 
 const MovieContainer = styled.div`
-    width: 180px;
+    width: 200px;
     border-radius: 10px;
     overflow: hidden
     text-align: center;
-    filter: ${({ hovered }) => (hovered ? "brightness(50%)" : "brightness(100%)")};
+    filter: ${({ hovered }) =>
+      hovered ? "brightness(50%)" : "brightness(100%)"};
 `;
 
 const PosterImage = styled.img`
   width: 100%;
-  height: auto;
+  height: 300px;
+  object-fit: cover;
 `;
 
 export default function Movie({ poster_path }) {
