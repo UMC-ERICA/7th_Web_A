@@ -11,7 +11,7 @@ const SearchContainer = styled.div`
 `;
 
 const SearchPage = () => {
-  return <SearchContainer>검색 페이지 야호~!</SearchContainer>;
+  return <SearchContainer><h3>검색 페이지 야호~!</h3></SearchContainer>;
 };
 
 export default SearchPage;

@@ -44,7 +44,7 @@ const Sidebar = () => {
           <FaSearch />
           찾기
         </Button>
-        <Button color={"#333"}>
+        <Button to="/movies" color={"#333"}>
           <BiSolidCameraMovie />
           영화
         </Button>
