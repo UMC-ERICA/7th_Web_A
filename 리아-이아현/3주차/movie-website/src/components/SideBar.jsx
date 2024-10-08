@@ -40,7 +40,7 @@ const Sidebar = () => {
   return (
     <SidebarContainer>
       <SideButtons>
-        <Button color={"#333"}>
+        <Button to="/search" color={"#333"}>
           <FaSearch />
           찾기
         </Button>
