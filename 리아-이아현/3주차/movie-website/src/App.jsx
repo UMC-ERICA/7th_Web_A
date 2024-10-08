@@ -1,23 +1,22 @@
-import Movie from "./components/Movie";
-import styled from "styled-components";
-import { MOVIES } from "./mocks/movies";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import RootLayout from "./layout/root-layout.jsx";
+import HomePage from "./pages/HomePage";
 
-const AppContainer = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-  padding: 20px;
-`;
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <RootLayout />,
+    children: [
+      {
+        index: true,
+        element: <HomePage />,
+      },
+    ],
+  },
+]);
 
 function App() {
-  return (
-    <AppContainer>
-      {MOVIES.results.map((item) => (
-        <Movie key={item.id} poster_path={item.poster_path} />
-      ))}
-    </AppContainer>
-  );
+  return <RouterProvider router={router} />;
 }
 
 export default App;

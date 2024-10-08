@@ -17,7 +17,6 @@ const RootLayout = () => {
         <Sidebar />
         <Outlet />
       </MainContainer>
-      <Outlet />
     </>
   );
 };
