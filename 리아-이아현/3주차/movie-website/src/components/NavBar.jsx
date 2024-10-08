@@ -46,8 +46,12 @@ const Navbar = () => {
         <img src={LogoImage} alt="로고" />
       </Logo>
       <NavButtons>
-        <Button color={"#333"}>로그인</Button>
-        <Button color={"#FF285E"}>회원가입</Button>
+        <Button to="/login" color={"#333"}>
+          로그인
+        </Button>
+        <Button to="/signup" color={"#FF285E"}>
+          회원가입
+        </Button>
       </NavButtons>
     </NavbarContainer>
   );
