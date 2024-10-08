@@ -7,8 +7,7 @@ const MovieContainer = styled.div`
     border-radius: 10px;
     overflow: hidden
     text-align: center;
-    filter: ${(props) =>
-      props.hovered ? "brightness(50%)" : "brightness(100%)"};
+    filter: ${({ hovered }) => (hovered ? "brightness(50%)" : "brightness(100%)")};
 `;
 
 const PosterImage = styled.img`
@@ -21,7 +20,7 @@ export default function Movie({ poster_path }) {
 
   return (
     <MovieContainer
-      hovered={hovered.toString()}
+      hovered={hovered ? 1 : 0}
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
     >
