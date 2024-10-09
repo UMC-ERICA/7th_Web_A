@@ -1,19 +1,9 @@
 import { useEffect, useState } from "react";
-import styled from "styled-components";
 import axios from "axios";
-import Movie from "../components/Movie";
+import MovieGrid from "../components/MovieGrid";
 
 const API_BEARER_TOKEN = import.meta.env.VITE_TMDB_API_BEARER_TOKEN;
 const BASE_URL = "https://api.themoviedb.org/3";
-
-const MovieGrid = styled.div`
-  background-color: black;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-  gap: 25px;
-  padding: 20px;
-  width: 100%;
-`;
 
 const PopularPage = () => {
   const [movies, setMovies] = useState([]);
@@ -38,18 +28,7 @@ const PopularPage = () => {
     getMovies();
   }, []);
 
-  return (
-    <MovieGrid>
-      {movies.map((movie) => (
-        <Movie
-          key={movie.id}
-          poster_path={movie.poster_path}
-          title={movie.title}
-          release_date={movie.release_date}
-        />
-      ))}
-    </MovieGrid>
-  );
+  return <MovieGrid movies={movies}></MovieGrid>;
 };
 
 export default PopularPage;
