@@ -10,7 +10,6 @@ const SidebarContainer = styled.div`
   background-color: #333;
   color: white;
   width: 150px;
-  height: 100vh;
 `;
 
 const SideButtons = styled.div`

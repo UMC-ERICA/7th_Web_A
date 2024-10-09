@@ -8,9 +8,11 @@ const MovieGridStyle = styled.div`
   gap: 25px;
   padding: 20px;
   width: 100%;
+  height: 100%;
+  grid-auto-rows: 1fr;
 `;
 
-const MovieGrid = ({movies}) => {
+const MovieGrid = ({ movies }) => {
   return (
     <MovieGridStyle>
       {movies.map((movie) => (

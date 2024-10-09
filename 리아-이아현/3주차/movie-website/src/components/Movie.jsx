@@ -4,7 +4,8 @@ import IMG_BASE_URL from "../constants/path";
 
 const MovieContainer = styled.div`
     background-color: black;
-    width: 200px;
+    width: 100%;
+    height: 100%;
     border-radius: 10px;
     overflow: hidden
     text-align: center;
@@ -14,7 +15,7 @@ const MovieContainer = styled.div`
 
 const PosterImage = styled.img`
   width: 100%;
-  height: 300px;
+  height: 250px;
   object-fit: cover;
   border-radius: 10px;
 `;
@@ -26,7 +27,7 @@ const MovieTitle = styled.h3`
 `;
 
 const ReleaseDate = styled.p`
-  font-size: 10px;
+  font-size: 12px;
   color: #ccc;
   margin-bottom: 10px;
 `;
