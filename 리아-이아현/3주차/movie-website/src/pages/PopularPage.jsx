@@ -22,7 +22,7 @@ const PopularPage = () => {
     const getMovies = async () => {
       try {
         const response = await axios.get(
-          `${BASE_URL}/discover/movie?include_adult=false&include_video=false&language=ko-KR&page=1&sort_by=popularity.desc`,
+          `${BASE_URL}/movie/popular?language=ko-KR&page=1`,
           {
             headers: {
               Authorization: `Bearer ${API_BEARER_TOKEN}`,
