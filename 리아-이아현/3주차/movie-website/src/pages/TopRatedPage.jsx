@@ -3,7 +3,7 @@ import axios from "axios";
 import MovieGrid from "../components/MovieGrid";
 
 const API_BEARER_TOKEN = import.meta.env.VITE_TMDB_API_BEARER_TOKEN;
-const BASE_URL = "https://api.themoviedb.org/3";
+const BASE_URL = import.meta.env.VITE_TMDB_BASE_URL;
 
 const TopRatedPage = () => {
   const [movies, setMovies] = useState([]);
