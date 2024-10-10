@@ -1,34 +1,24 @@
 import { useEffect, useState } from "react";
-import axios from "axios";
+import { getTopRatedMovies } from "../apis/movies";
 import MovieGrid from "../components/MovieGrid";
-
-const API_BEARER_TOKEN = import.meta.env.VITE_TMDB_API_BEARER_TOKEN;
-const BASE_URL = import.meta.env.VITE_TMDB_BASE_URL;
 
 const TopRatedPage = () => {
   const [movies, setMovies] = useState([]);
 
   useEffect(() => {
-    const getMovies = async () => {
+    const fetchMovies = async () => {
       try {
-        const response = await axios.get(
-          `${BASE_URL}/movie/top_rated?language=ko-KR&page=1`,
-          {
-            headers: {
-              Authorization: `Bearer ${API_BEARER_TOKEN}`,
-            },
-          }
-        );
+        const response = await getTopRatedMovies();
         setMovies(response.data.results);
       } catch (error) {
         console.error("오류 발생:", error);
       }
     };
 
-    getMovies();
+    fetchMovies();
   }, []);
 
-  return <MovieGrid movies={movies}></MovieGrid>;
+  return <MovieGrid movies={movies} />;
 };
 
 export default TopRatedPage;
