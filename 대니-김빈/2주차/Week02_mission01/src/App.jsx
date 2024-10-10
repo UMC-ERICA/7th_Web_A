@@ -18,7 +18,7 @@ function App() {
   const addTodo = () => {
     setTodos((prev) => [
       ...prev,
-      { id: Math.floor(Math.random() * 100) * 2, task: text}
+      { id: Math.floor(Math.random() * 100) + 2, task: text}
     ]);
     setText('');
   };
