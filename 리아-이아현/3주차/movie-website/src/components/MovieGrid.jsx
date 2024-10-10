@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import Movie from "./Movie";
+import MovieDetail from "./MovieDetail";
 
 const MovieGridStyle = styled.div`
   background-color: black;
@@ -16,7 +16,7 @@ const MovieGrid = ({ movies }) => {
   return (
     <MovieGridStyle>
       {movies.map((movie) => (
-        <Movie
+        <MovieDetail
           key={movie.id}
           poster_path={movie.poster_path}
           title={movie.title}
